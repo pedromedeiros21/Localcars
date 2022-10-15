@@ -1,0 +1,19 @@
+@model Contato
+
+<h3>Para nos contactar, nos envie as seguintes informações</h3>
+
+<form method="POST">
+    <p>
+        <label asp-for="nome">Nome completo</label>
+        <input type="text" asp-for="nome">
+    </p>
+    <p>
+        <label asp-for="email">E-mail</label>
+        <input type="email" asp-for="email">
+    </p>
+    <p>
+        <label asp-for="mensagem">Sua mensagem</label>
+        <input asp-for="mensagem">
+    </p>
+    <input type="submit" value="Enviar">
+</form>

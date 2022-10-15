@@ -1,0 +1,51 @@
+@model Testdrive
+
+<script>
+function myFunction() {
+  alert("Sua mensagem foi enviada!");
+}
+</script>
+
+<h3>Marque seu test drive colocando as seguintes informações</h3>
+
+<form method="POST">
+    <p>
+        <label asp-for="nome">Nome completo</label>
+        <input type="text" asp-for="nome" required>
+    </p>
+    <p>
+        <label asp-for="email">E-mail</label>
+        <input type="email" asp-for="email" required>
+    </p>
+    <p>
+        <label asp-for="tel">Número de telefone</label>
+        <input type="tel" asp-for="tel" required>
+    </p>
+     <p>
+        <label asp-for="horas">Horas (24h)</label>
+        <input type="time" asp-for="horas" required>
+    </p>
+     <p>
+        <label asp-for="data">Data</label>
+        <input type="date" asp-for="data" required>
+    </p>
+    <input type="submit" onclick="myFunction()" value="Marcar test drive">
+</form>
+
+<style>
+    form {
+        display: table;
+    }
+
+    p {
+        display: table-row;
+    }
+
+    label {
+        display: table-cell;
+    }
+
+    input {
+        display: table-cell;
+    }
+</style>

@@ -1,0 +1,26 @@
+@model List<Testdrive>
+
+    <h2>Estamos te esperando na Localcars!</h2>
+    <table border="2">
+        <thead>
+     <tr>
+         <th>Nome completo</th>
+         <th>E-mail</th>
+         <th>Telefone</th>
+         <th>Hora</th>
+         <th>Data</th>
+     </tr>
+     </thead>
+     <tbody>
+         @foreach (Testdrive item in Model)
+         {
+             <tr>
+                 <td>@item.nome</td>
+                 <td>@item.email</td>
+                 <td>@item.tel</td>
+                 <td>@item.horas</td>
+                 <td>@item.data</td>
+             </tr>
+         }
+     </tbody>
+    </table>

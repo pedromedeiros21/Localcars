@@ -1,0 +1,27 @@
+@model Testdrive
+
+<h3>Marque seu test drive colocando as seguintes informações</h3>
+
+<form method="POST">
+    <p>
+        <label asp-for="nome">Nome completo</label>
+        <input type="text" asp-for="nome">
+    </p>
+    <p>
+        <label asp-for="email">E-mail</label>
+        <input type="email" asp-for="email">
+    </p>
+    <p>
+        <label asp-for="tel">Número de telefone</label>
+        <input type="tel" asp-for="tel">
+    </p>
+     <p>
+        <label asp-for="horas">Horas (24h)</label>
+        <input type="time" asp-for="horas">
+    </p>
+     <p>
+        <label asp-for="data">Data</label>
+        <input type="date" asp-for="data">
+    </p>
+    <input type="submit" value="Marcar um test drive">
+</form>

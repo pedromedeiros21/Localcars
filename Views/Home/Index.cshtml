@@ -1,0 +1,70 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="~/css/site.css">
+    <title>Localcars Web</title>
+</head>
+
+<body>
+    <header>
+        <div class="topnav">
+            <h1 style="color: white;">Localcars</h1>
+            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="emissaozero">Carros com emissão zero |</a>
+            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="destaques">Destaques |</a>
+            <a class="nav-link text-dark" asp-area="" asp-controller="Home"
+                asp-action="custobeneficio">Custo-Benefício</a>
+            <h3></h3>
+            <input type="text">
+            <input type="button" value="Busque seu carro">
+        </div>
+    </header>
+    <main>
+        <h3></h3>
+        <img src="~/imagens/carrodestaque.jpg" class="img-fluid mb-4" width="400">
+        <h3></h3>
+        <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="carrodestaque">Renault Zoe</a>
+        <p>O carro elétrico mais vendido na Europa agora no Brasil</p>
+        <h2>Novidades</h2>
+        <img src="~/imagens/prius2017.jpg" class="img-fluid mb-4" width="250">
+        <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="prius">Toyota Prius 2017</a>
+        <img src="~/imagens/golf.jpg" class="img-fluid mb-4" width="250">
+        <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="golf">Volkswagen Golf</a>
+        <img src="~/imagens/fiat500e.jpg" class="img-fluid mb-4" width="250">
+        <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="fiate">Fiat 500e</a>
+    </main>
+    <footer>
+        <a class="nav-link text-dark" asp-area="" asp-controller="Contato" asp-action="formulariocontato">Enviar mensagem |</a>
+        <a class="nav-link text-dark" asp-area="" asp-controller="Testdrive"asp-action="formulariotestdrive">Marcar test drive</a>
+    </footer>
+
+    <style>
+        .topnav {
+            background-color: cadetblue;
+            overflow: hidden;
+            padding-left: 20px;
+        }
+        .topnav a {color: white;}
+        footer {
+            background-color: cadetblue;
+            overflow: hidden;
+            bottom: 0;
+            width: 100%;
+        }
+        footer a {color: white;}
+        body {
+            margin: 0;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+    </style>
+
+</body>
+
+</html>

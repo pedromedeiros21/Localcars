@@ -1,0 +1,22 @@
+@model List<Contato>
+
+    <h2>Mensagem enviada!</h2>
+    <table border="2">
+        <thead>
+     <tr>
+         <th>Nome completo</th>
+         <th>E-mail</th>
+         <th>Mensagem</th>
+     </tr>
+     </thead>
+     <tbody>
+         @foreach (Contato item in Model)
+         {
+             <tr>
+                 <td>@item.nome</td>
+                 <td>@item.email</td>
+                 <td>@item.mensagem</td>
+             </tr>
+         }
+     </tbody>
+    </table>

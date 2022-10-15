@@ -1,0 +1,21 @@
+CREATE DATABASE localcars;
+
+CREATE TABLE Contato
+(
+Id int(4) AUTO_INCREMENT NOT NULL,
+nome varchar(200),
+email varchar(200),
+mensagem varchar(200),
+PRIMARY KEY (Id)
+);
+
+CREATE TABLE Testdrive
+(
+Id int(4) AUTO_INCREMENT NOT NULL,
+nome varchar(200),
+email varchar(200),
+tel int(30),
+horas int(30),
+data date,
+PRIMARY KEY (Id)
+);
